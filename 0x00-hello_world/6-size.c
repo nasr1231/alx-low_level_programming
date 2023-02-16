@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - prints the size of various types a based on computer that its complied and run on.
+* main - prints the size of various types a based on computer.
 * Return: Always 0.
 */
 
