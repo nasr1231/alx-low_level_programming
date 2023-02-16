@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*
+/**
  * main -  Entry
+ * Description: 'print function'
  * return: always 0
 */
 int main(void)
