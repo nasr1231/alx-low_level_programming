@@ -1,25 +1,18 @@
 #include "main.h"
 
 /**
- * print_binary - printing the binary representation of a number.
- * @n: the number to be printed in binary 0 or 1.
+ * print_binary - printg the binary represeantation of a number 0 or 1.
+ * @n: a string of 0 and 1 chars
  *
- * Return: void
  */
+
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1;
-	unsigned int bits = sizeof(n) * 8;
+	int printing_bin = ((n & 1) + '0');
 
-	while (bits--)
+	if (n > 1)
 	{
-		if ((n >> bits) & mask)
-			break;
+		print_binary((n >> 1));
 	}
-	while (bits--)
-	{
-		unsigned long int bit = (n >> bits) & mask;
-		_putchar(bit + '0');
-	}
+	_putchar(printing_bin);
 }
-
